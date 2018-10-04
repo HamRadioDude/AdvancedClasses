@@ -8,18 +8,18 @@ public class Main {
         //  Below are positions available for use
 //    ADMINISTRATION, PRODUCTION, SALES, MAINTENANCE, TECHNICAL, SECRETARIAL;
 
-        Employee empNum001 = new Employee("Sean A Klechak", "ADMINISTRATION", true, 27.00,
+        Employee empNum001 = new Employee("Sean A Klechak", PositionTitle.ADMINISTRATION, true, 27.00,
                 1, "01/10/2007");
 
-        Employee empNum002 = new Employee("Buddy Dog", "SECRETARIAL", false, 50.00, 1, "09/15/2015");
+        Employee empNum002 = new Employee("Buddy Dog", PositionTitle.MAINTENANCE, false, 50.00, 1, "09/15/2015");
 
-        Employee empNum003 = new Employee("Guy Clark", "SALES", true, 100.00, 2, "1/2/2001");
+        Employee empNum003 = new Employee("Guy Clark", PositionTitle.PRODUCTION, true, 100.00, 2, "1/2/2001");
 
-        Employee empNum004 = new Employee("Homer Simpson", "MAINTENANCE", false, 22.00, 2, "4/5/2014");
+        Employee empNum004 = new Employee("Homer Simpson", PositionTitle.SALES, false, 22.00, 2, "4/5/2014");
 
-        Employee empNum005 = new Employee("Carl Carlson", "TECHNICAL", true, 100.00, 3, "1/2/2005");
+        Employee empNum005 = new Employee("Carl Carlson", PositionTitle.SECRETARIAL, true, 100.00, 3, "1/2/2005");
 
-        Employee empNum006 = new Employee("Moe Szyslak", "PRODUCTION", false, 21.00, 3, "4/5/2013");
+        Employee empNum006 = new Employee("Moe Szyslak", PositionTitle.TECHNICAL, false, 21.00, 3, "4/5/2013");
 
 // Set up with Emp, 1 3 and 5 having the same pay rate, just different shifts, The same with 2 4 6.  So checking the math will be easier
 

@@ -5,14 +5,14 @@ public class Employee {
 //
     // initialize private
     private String empName;
-    private String empPos;
+    private PositionTitle empPos;
     private boolean empSal = true;
     private double empPay;
     private int empShft;
     private String empStrt;
 
 
-    public Employee(String empName, String empPos, boolean empSal, double empPay, int empShft, String empStrt) {
+    public Employee(String empName, PositionTitle empPos, boolean empSal, double empPay, int empShft, String empStrt) {
         this.empName = empName;
         this.empPos = empPos;
         this.empSal = empSal;
@@ -30,11 +30,11 @@ public class Employee {
         this.empName = empName;
     }
 
-    public String getEmpPos() {
+    public PositionTitle getEmpPos() {
         return empPos;
     }
 
-    public void setEmpPos(String empPos) {
+    public void setempPos(PositionTitle empPos) {
         this.empPos = empPos;
     }
 
@@ -85,7 +85,7 @@ public class Employee {
     System.out.println("Is Salary: " + empSal);
     System.out.println("Start Date: " + empStrt);
     System.out.println("Shift:  " + empShft);
-    System.out.printf("%20s %10s %.2f", "Pay Rate:", "$", empPay);
+    System.out.printf("%20s %11s %.2f", "Pay Rate:", "$", empPay);
     System.out.printf("\n%20s  %10s %.2f", "Hours Worked:", " ", hoursIn);
     System.out.printf("\n%20s %9s %.2f", "Total Pay:", "$", totalPay);
     System.out.printf("\n--------------------------------------------------------------------------------------\n ");
